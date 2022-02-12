@@ -7,7 +7,8 @@ import {
   Legend,
   Bar,
 } from "recharts";
-const data = [
+
+const data1 = [
   {
     name: "Page A",
     uv: 4000,
@@ -44,7 +45,8 @@ const data = [
     pv: 4300,
   },
 ];
-const BarChartBox = () => {
+const BarChartBox = ({ data }) => {
+  console.log("BarChartBox", data);
   return (
     <BarChart width={730} height={250} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
