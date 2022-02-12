@@ -1,5 +1,5 @@
 import { RadialBarChart, RadialBar, Legend, Tooltip } from "recharts";
-const data = [
+const data1 = [
   {
     name: "18-24",
     uv: 31.47,
@@ -43,7 +43,7 @@ const data = [
     fill: "#ffc658",
   },
 ];
-const RadialBarChartBox = () => {
+const RadialBarChartBox = ({data}) => {
   return (
     <RadialBarChart
       width={730}
